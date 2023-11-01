@@ -13,9 +13,6 @@
 #ifndef PUSH_SWAP_BONUS_H
 # define PUSH_SWAP_BONUS_H
 
-# include "../libft/incs/ft_printf.h"
-# include "../libft/incs/get_next_line.h"
-# include "../libft/incs/get_next_line_bonus.h"
 # include "push_swap.h"
 
 /*starting list bonus*/

@@ -133,7 +133,7 @@ void	checker_final(t_dlist **s_a, t_dlist **s_b, t_utils *u, char *args)
 	else
 	{
 		ft_printf("OK\n");
-		ft_printf("The sorting took: %d movements", u->movements_t);
+		ft_printf("The sorting took: %d movements\n", u->movements_t);
 	}
 	if (*s_a != NULL)
 		free_list(s_a);

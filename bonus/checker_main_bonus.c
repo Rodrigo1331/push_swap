@@ -6,7 +6,7 @@
 /*   By: rcruz-an <rcruz-an@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 13:10:09 by rcruz-an          #+#    #+#             */
-/*   Updated: 2023/03/24 10:39:04 by rcruz-an         ###   ########.fr       */
+/*   Updated: 2023/11/02 14:32:26 by rcruz-an         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	checking_ifordered(t_dlist *lst, int i)
 			else if (lst->data < lst->next->data && i == 2)
 				return (0);
 			lst = lst->next;
-		}	
+		}
 	}
 	return (1);
 }
@@ -48,7 +48,7 @@ int	find_number(t_dlist *stack, int number)
 }
 
 void	str_check(t_dlist **stacka, t_dlist **stackb, char *str)
-{	
+{
 	write(2, "Error\n", 6);
 	ft_printf("\nThis is not a valid command: ");
 	while (1)
@@ -102,12 +102,12 @@ int	main(int argc, char *argv[])
 
 	if (argc < 2)
 		return (0);
-	checking_digits_bonus(argv, argc);
+	checking_digits_bonus(argv);
 	stacka = first_list_bonus(argv, argc);
-	checking_list_bonus(stacka, argv);
+	checking_list_bonus(stacka);
 	start_utils(&utils, stacka);
 	stackb = NULL;
 	stacka = check_order(stacka, &stackb, &utils);
-	checker_final(&stacka, &stackb, &utils, argv[argc - 1]);
+	checker_final(&stacka, &stackb, &utils);
 	return (0);
 }

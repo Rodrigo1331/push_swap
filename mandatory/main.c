@@ -6,7 +6,7 @@
 /*   By: rcruz-an <rcruz-an@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 13:56:25 by rcruz-an          #+#    #+#             */
-/*   Updated: 2023/03/22 11:01:40 by rcruz-an         ###   ########.fr       */
+/*   Updated: 2023/11/02 12:40:41 by rcruz-an         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	checking_ifordered(t_dlist *lst, int i)
 			else if (lst->data < lst->next->data && i == 2)
 				return (0);
 			lst = lst->next;
-		}	
+		}
 	}
 	return (1);
 }

@@ -62,8 +62,8 @@ t_dlist	*pushing_toa(t_dlist *lsta, t_dlist *lstb)
 	}
 	while (lsta->prev)
 		lsta = lsta->prev;
-	free_list(&temp);
 	return (lsta);
+	free_list(&temp);
 }
 
 int	deletefromb(t_dlist *lstb)

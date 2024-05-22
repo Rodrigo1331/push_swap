@@ -23,13 +23,13 @@ void	error_func_bonus(t_dlist **list)
 int	checking_digits_bonus(char **argv)
 {
 	int	i;
-	int	j;
+/* 	int	j; */
 
 	i = 1;
-	j = 0;
+/* 	j = 0; */
 	while (argv[i])
 	{
-		j = 0;
+/* 		j = 0; */
 		if (*argv[i] == '\0')
 			error_func_bonus(NULL);
 		i++;

@@ -32,7 +32,8 @@ int	checking_digits(char **argv)
 		j = 0;
 		while (argv[i][j])
 		{
-			if ((argv[i][0] == '-' || argv[i][0] == '+') && j == 0)
+			if ((argv[i][0] == '-' || argv[i][0] == '+') && j == 0 \
+			&& argv[i][1] != '\0')
 				j++;
 			else if (ft_isdigit(argv[i][j]) != 1)
 				error_func(NULL);
